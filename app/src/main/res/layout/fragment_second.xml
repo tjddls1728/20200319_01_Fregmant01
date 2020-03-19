@@ -5,15 +5,28 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#000000"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/idEdt1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:textColor="#FFFFFF"
-        android:text="두번째 프래그먼트"
+        android:hint="ID입력"
+        />
+
+    <EditText
+        android:id="@+id/pwEdt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="pw입력"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
         />
 
 </LinearLayout>
