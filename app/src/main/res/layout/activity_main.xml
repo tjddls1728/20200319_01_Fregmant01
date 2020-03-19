@@ -7,6 +7,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/firstfragCallBtn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="첫 프래그먼트"
+            />
+
+        <Button
+            android:id="@+id/secondfragCallBtn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="두번쨰 프래그먼트"
+            />
+
+    </LinearLayout>
+
     <fragment
         android:id="@+id/firstfrag"
         android:layout_width="match_parent"
