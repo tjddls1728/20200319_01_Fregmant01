@@ -1,9 +1,11 @@
 package kr.co.a20200319_01_fregmant;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,6 +29,17 @@ public class FirstFregment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        binding.infoToastBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = binding.nameEdt.getText().toString();
+                String phone = binding.phoneEdt.getText().toString();
+
+                Toast.makeText(getActivity(),String.format("%s:%s",name,phone),Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
     }
 
