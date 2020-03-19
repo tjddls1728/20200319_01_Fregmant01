@@ -30,7 +30,7 @@ public class secondFragment extends Fragment {
     private void setupValue() {
     }
 
-    private void setupEvents(){
+    void setupEvents(){
 
     }
 

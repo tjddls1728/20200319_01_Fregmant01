@@ -30,16 +30,38 @@
             />
 
     </LinearLayout>
-
-    <fragment
-        android:id="@+id/firstfrag"
+    <LinearLayout
+        android:id="@+id/firstfraglayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        class="kr.co.a20200319_01_fregmant.FirstFregment"
-        >
+        android:orientation="vertical">
 
-    </fragment>
+        <fragment
+            android:id="@+id/firstfrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="kr.co.a20200319_01_fregmant.FirstFregment"
+            >
 
+        </fragment>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondfraglayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/secondfrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="kr.co.a20200319_01_fregmant.secondFragment">
+
+        </fragment>
+
+    </LinearLayout>
 
 
 

@@ -32,7 +32,7 @@ public class FirstFregment extends Fragment {
     private void setupValues() {
     }
 
-    private void setupEvents() {
+    void setupEvents() {
     }
 
 
